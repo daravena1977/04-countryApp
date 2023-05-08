@@ -23,6 +23,7 @@ export class ByRegionPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.countries = this.countriesService.cacheStore.byRegion.countries;
+    this.selectedRegion = this.countriesService.cacheStore.byRegion.region;
   }
 
   searchByRegion(region: Region): void {
